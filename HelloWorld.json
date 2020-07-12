@@ -29,6 +29,16 @@
 			"type": "string",
 			"description": "The Chart Type value",
 			"default" : "radar"
+		},
+		 "widgetTextValue": {
+			"type": "string",
+			"description": "The widget Text Value",
+			"default" : "Default Text"
+		},
+                "widgetTextColor": {
+			"type": "string",
+			"description": "The Chart Text Color",
+			"default" : "#3498db"
 		}
 		
 		},
@@ -62,11 +72,12 @@
 			"description": "Update the Chart type to Polar Area",
 			"body": "this.chartTypeValue = 'polarArea';"
 		},
-               "getChartType": {
+		"getChartType": {
 			"description": "Get the chartType",
 			"body": "return this.chartTypeValue;",
 			"returnType": "string"
-		}
+		},
+		
 		
 			
 	},
