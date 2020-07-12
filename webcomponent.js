@@ -80,11 +80,11 @@
             this.chartTypeValue = value;
         }
 	  
-	get widgetText() {
+	get widgetTextValue() {
             return this.widgetTextValue;
         }
 
-        set widgetText(value) {
+        set widgetTextValue(value) {
             this.widgetTextValue = value;
         }
        
