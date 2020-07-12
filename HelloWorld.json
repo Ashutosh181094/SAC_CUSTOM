@@ -35,7 +35,7 @@
 			"description": "The widget Text Value",
 			"default" : "Default Text"
 		},
-                "widgetTextColor": {
+                "wigetTextColorValue": {
 			"type": "string",
 			"description": "The Chart Text Color",
 			"default" : "#3498db"
