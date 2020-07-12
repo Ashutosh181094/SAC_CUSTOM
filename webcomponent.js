@@ -12,7 +12,8 @@
 			<canvas id="myChart" width="400" height="400"></canvas>
 		</div>
     `;
-
+    
+    chartsJS.onload = () => 
     customElements.define('com-sap-sample-helloworld5', class HelloWorld extends HTMLElement {
 
 
