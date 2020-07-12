@@ -50,18 +50,18 @@
 			this.dispatchEvent(new CustomEvent("propertiesChanged", {
 					detail: {
 						properties: {
-							widgetText: this.widgetText
+							widgetTextValue: this.widgetTextValue
 						}
 					}
 			}));
 		}
 
 
-		set widgetText(newText) {
+		set widgetTextValue(newText) {
 			this._shadowRoot.getElementById("aps_text").value = newText;
 		}
 
-		get widgetText() {
+		get widgetTextValue() {
 			return this._shadowRoot.getElementById("aps_text").value;
 		}
 		
