@@ -143,7 +143,7 @@
 			options:{
 				title:{
 					display:true,
-					text:'Largest Cities In Massachusetts',
+					text:this.widgetTextValue,
 					fontSize:25
 				},
 				legend:{
