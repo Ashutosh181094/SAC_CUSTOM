@@ -40,7 +40,7 @@
 			this.dispatchEvent(new CustomEvent("propertiesChanged", {
 					detail: {
 						properties: {
-							widgetText: this.widgetText
+							widgetTextValue: this.widgetTextValue
 						}
 					}
 			}));
@@ -50,7 +50,7 @@
 			this.dispatchEvent(new CustomEvent("propertiesChanged", {
 					detail: {
 						properties: {
-							widgetTextValue: this.widgetTextValue
+							wigetTextColorValue: this.wigetTextColorValue
 						}
 					}
 			}));
@@ -65,11 +65,11 @@
 			return this._shadowRoot.getElementById("aps_text").value;
 		}
 		
-		set widgetTextColor(newTextColor){
+		set widgetTextColorValue(newTextColor){
 			this._shadowRoot.getElementById("aps_color").value = newTextColor;
 		}
 		
-		get widgetTextColor(){
+		get widgetTextColorValue(){
 			return this._shadowRoot.getElementById("aps_color").value;
 		}
 	}
