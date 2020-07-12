@@ -8,6 +8,9 @@
     
    let tmpl = document.createElement('template');
    tmpl.innerHTML = `
+    <div id="myDiv">
+			<canvas id="myChart" width="400" height="400"></canvas>
+		</div>
     `;
 
     customElements.define('com-sap-sample-helloworld5', class HelloWorld extends HTMLElement {
