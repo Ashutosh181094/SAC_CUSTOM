@@ -3,11 +3,23 @@
 	template.innerHTML = `
 		<form id="form">
 			<fieldset>
-				<legend>Custom Widget Text</legend>
+				<legend>Graph Description</legend>
 				<table>
 					<tr>
 						<td>Text</td>
 						<td><input id="aps_text" type="string"></td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+               
+                <form id="form">
+			<fieldset>
+				<legend>Graph Description Text Color</legend>
+				<table>
+					<tr>
+						<td>Text</td>
+						<td><input id="aps_color" type="string"></td>
 					</tr>
 				</table>
 			</fieldset>
