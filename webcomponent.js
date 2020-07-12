@@ -23,6 +23,8 @@
            shadowRoot.appendChild(template.content.cloneNode(true));
            this._firstConnection = false;
            this.chartTypeValue="radar";
+	   this.wigetTextColorValue="black";
+           this.widgetTextValue;
            
 
             //Adding event handler for click events
@@ -76,6 +78,22 @@
 
         set chartType(value) {
             this.chartTypeValue = value;
+        }
+	  
+	get widgetText() {
+            return this.widgetTextValue;
+        }
+
+        set widgetText(value) {
+            this.widgetTextValue = value;
+        }
+       
+	get widgetTextColor() {
+            return this.wigetTextColorValue;
+        }
+
+        set widgetTextColor(value) {
+            this.wigetTextColorValue = value;
         }
        
         
