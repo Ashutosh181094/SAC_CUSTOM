@@ -6,7 +6,7 @@
     document.head.appendChild(chartsJS);
     
    let template = document.createElement('template');
-   tmpl.innerHTML = `
+   template.innerHTML = `
     <div id="myDiv">
 			<canvas id="myChart" width="400" height="400"></canvas>
 		</div>
