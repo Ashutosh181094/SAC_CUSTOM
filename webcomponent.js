@@ -6,7 +6,7 @@
     chartsJS.async=false;
     document.head.appendChild(chartsJS);
     
-   let tmpl = document.createElement('template');
+   let template = document.createElement('template');
    tmpl.innerHTML = `
     <div id="myDiv">
 			<canvas id="myChart" width="400" height="400"></canvas>
@@ -18,9 +18,11 @@
 
 		constructor() {
 			super(); 
-	   this._shadowRoot = this.attachShadow({mode: "open"});
-            this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
-            this._firstConnection = false;
+          
+           let shadowRoot = this.attachShadow({mode: "open"});
+           shadowRoot.appendChild(template.content.cloneNode(true));
+           this._firstConnection = false;
+           this.chartTypeValue="radar";
            
 
             //Adding event handler for click events
