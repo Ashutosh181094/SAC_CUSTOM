@@ -4,6 +4,7 @@
    let chartsJS=document.createElement('script');
     chartsJS.src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js';
     document.head.appendChild(chartsJS);
+    var dimensions=new Array();
     
    let template = document.createElement('template');
    template.innerHTML = `
@@ -78,6 +79,14 @@
 
         set chartType(value) {
             this.chartTypeValue = value;
+        }
+	 
+	get Dimensions() {
+            return this.dimensions;
+        }
+
+        set Dimensions(value) {
+            this.dimensions = value;
         }
 	  
 	get widgetText() {
