@@ -4,7 +4,7 @@
    let chartsJS=document.createElement('script');
     chartsJS.src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js';
     document.head.appendChild(chartsJS);
-    var dimensions=new Array();
+    
     
    let template = document.createElement('template');
    template.innerHTML = `
@@ -26,6 +26,7 @@
            this.chartTypeValue="radar";
 	   this.wigetTextColorValue="black";
            this.widgetTextValue;
+	   this.dimensions=new Array();
            
 
             //Adding event handler for click events
