@@ -121,7 +121,7 @@
     let massPopChart=new Chart(myChart,{
 			type:typeofchart,//bar,horizontalBar,pie,line,doughnut,radar,polarArea
 			data:{
-				labels:['Boston','Worcester','Springfield','Lowell','Cambridge','New Bedford'],
+				labels:this.dimensions,
 				datasets:[{
 					label:'Population',
 					data:[
@@ -129,8 +129,7 @@
 					181045,
 					153060,
 					106519,
-					105162,
-					95072
+					105162
 					],
 					//backgroundColor:'green'
 					backgroundColor:[
