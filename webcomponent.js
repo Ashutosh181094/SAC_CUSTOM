@@ -27,6 +27,7 @@
 	   this.wigetTextColorValue="black";
            this.widgetTextValue;
 	   this.dimensions=new Array();
+	   this.measures=new Array();
            
 
             //Adding event handler for click events
@@ -89,6 +90,14 @@
         set Dimensions(value) {
             this.dimensions = value;
         }
+	
+	get Measures() {
+            return this.measures;
+        }
+
+        set Measures(value) {
+            this.measures = value;
+        }
 	  
 	get widgetText() {
             return this.widgetTextValue;
@@ -125,13 +134,7 @@
 				labels:this.dimensions,
 				datasets:[{
 					label:'Population',
-					data:[
-					617594,
-					181045,
-					153060,
-					106519,
-					105162
-					],
+					data:this.measures,
 					//backgroundColor:'green'
 					backgroundColor:[
 					'rgba(255,99,132,0.6)',
