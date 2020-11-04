@@ -128,7 +128,7 @@
     
     
     
-    let massPopChart=new Chart(myChart2,{
+    let massPopChart=new Chart(myChart,{
 			type:typeofchart,//bar,horizontalBar,pie,line,doughnut,radar,polarArea
 			data:{
 				labels:this.dimensions,
