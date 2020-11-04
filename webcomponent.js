@@ -28,7 +28,7 @@
            this.widgetTextValue;
 	   this.dimensions=new Array();
 	   this.measures=new Array();
-           
+           console.log("Constructor Called");
 
             //Adding event handler for click events
 			this.addEventListener("click", event => {
@@ -39,22 +39,24 @@
 
         //Fired when the widget is added to the html DOM of the page
         connectedCallback(){
+	 console.log("ConnectedCallback() called");
             this._firstConnection = true;
             this.redraw(); 
         }
 
          //Fired when the widget is removed from the html DOM of the page (e.g. by hide)
         disconnectedCallback(){
-        
+        console.log("DisconnectedCallback() called");
         }
 
          //When the custom widget is updated, the Custom Widget SDK framework executes this function first
 		onCustomWidgetBeforeUpdate(oChangedProperties) {
-
+         console.log("onCustomWidgetBeforeUpdate() called");
 		}
 
         //When the custom widget is updated, the Custom Widget SDK framework executes this function after the update
 		onCustomWidgetAfterUpdate(oChangedProperties) {
+	       console.log("onCustomWidgetAfterUpdate() called");
             if (this._firstConnection){
                 this.redraw();
             }
@@ -62,7 +64,7 @@
         
         //When the custom widget is removed from the canvas or the analytic application is closed
         onCustomWidgetDestroy(){
-        
+        console.log("onCustomWidgetDestroy() called");
         }
 
         
