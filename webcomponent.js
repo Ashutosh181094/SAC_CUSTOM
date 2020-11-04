@@ -133,7 +133,7 @@
 			data:{
 				labels:this.dimensions,
 				datasets:[{
-					label:'Population',
+					label:this.widgetTextValue,
 					data:this.measures,
 					//backgroundColor:'green'
 					backgroundColor:[
