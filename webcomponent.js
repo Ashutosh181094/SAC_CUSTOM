@@ -118,7 +118,7 @@
         
 
         redraw(){
-            let myChart2=this.shadowRoot.getElementById('myChart2');
+            let myChart=this.shadowRoot.getElementById('myChart2');
              let typeofchart=this.chartType;
 		//Global Options
 
