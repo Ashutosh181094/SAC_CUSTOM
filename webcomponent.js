@@ -106,10 +106,12 @@
         }
 
         set widgetText(value) {
+		console.log("Setter of widget text in main file");
             this.widgetTextValue = value;
         }
        
 	get widgetTextColor() {
+	    console.log("Getter of widget text in main file");
             return this.wigetTextColorValue;
         }
 
