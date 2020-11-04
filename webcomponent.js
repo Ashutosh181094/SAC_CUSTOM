@@ -9,7 +9,7 @@
    let template = document.createElement('template');
    template.innerHTML = `
     <div id="myDiv">
-			<canvas id="myChart" width="400" height="400"></canvas>
+			<canvas id="myChart2" width="400" height="400"></canvas>
 		</div>
     `;
     
@@ -118,7 +118,7 @@
         
 
         redraw(){
-            let myChart=this.shadowRoot.getElementById('myChart');
+            let myChart2=this.shadowRoot.getElementById('myChart2');
              let typeofchart=this.chartType;
 		//Global Options
 
@@ -128,7 +128,7 @@
     
     
     
-    let massPopChart=new Chart(myChart,{
+    let massPopChart=new Chart(myChart2,{
 			type:typeofchart,//bar,horizontalBar,pie,line,doughnut,radar,polarArea
 			data:{
 				labels:this.dimensions,
