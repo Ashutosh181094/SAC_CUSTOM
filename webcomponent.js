@@ -9,7 +9,7 @@
    let template = document.createElement('template');
    template.innerHTML = `
     <div id="myDiv">
-			<canvas id="myChart2" width="400" height="400"></canvas>
+			<canvas id="myChart" width="400" height="400"></canvas>
 		</div>
     `;
     
@@ -118,7 +118,7 @@
         
 
         redraw(){
-            let myChart=this.shadowRoot.getElementById('myChart2');
+            let myChart=this.shadowRoot.getElementById('myChart');
              let typeofchart=this.chartType;
 		//Global Options
 
