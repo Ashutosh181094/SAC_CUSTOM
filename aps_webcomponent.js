@@ -58,6 +58,7 @@
 
 
 		set widgetTextValue(newText) {
+			console.log("Styling File");
 			this._shadowRoot.getElementById("aps_text").value = newText;
 		}
 
